@@ -391,3 +391,7 @@ cat > phpcs.xml <<PHPCS_XML
 </ruleset>
 
 PHPCS_XML
+
+rm LICENSE.txt
+rm README.md
+rm start.sh
