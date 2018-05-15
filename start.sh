@@ -335,6 +335,9 @@ composer.deploy:
 composer.dev:
 	cd ${APPLICATION_DIRECTORY}/ && composer install
 
+${APPLICATION_DIRECTORY}/yarn.lock: ${APPLICATION_DIRECTORY}/package.json
+	cd ${APPLICATION_DIRECTORY}/ && yarn install
+
 ${APPLICATION_DIRECTORY}/node_modules/: ${APPLICATION_DIRECTORY}/package.json ${APPLICATION_DIRECTORY}/yarn.lock
 	cd ${APPLICATION_DIRECTORY}/ && yarn install
 	touch ${APPLICATION_DIRECTORY}/node_modules/
