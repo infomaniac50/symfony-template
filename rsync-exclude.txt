@@ -1,0 +1,12 @@
+.dockerignore
+.env
+.git
+.user.ini
+.well-known/
+cgi-bin
+Dockerfile
+mailgun-config.php.sample
+node_modules/
+rsync-exclude.txt
+var/
+vendor/
