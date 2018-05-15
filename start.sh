@@ -14,7 +14,10 @@
 
 # Utility Functions
 # https://www.gitignore.io/
-function gi() { curl -L -s https://www.gitignore.io/api/\$@ ;}
+function gi ()
+{
+    curl -L -s "https://www.gitignore.io/api/$*"
+}
 
 # Constants
 # You should change these.
