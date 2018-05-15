@@ -15,3 +15,11 @@ Edit the Constants section in start.sh before running it.
 - [composer](https://getcomposer.org/)
 - [rsync](https://rsync.samba.org/)
 - [Docker](https://www.docker.com/)
+
+### License
+
+This repository uses the MIT license. You may select your own license for generated projects.
+
+start.sh, README.md, and LICENSE are all licensed with MIT. You should remove or replace these files in generated projects.
+
+All other files in this template are static and can be re-licensed by the user.
