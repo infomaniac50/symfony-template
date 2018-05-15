@@ -5,5 +5,5 @@ set -x
 cd ..
 rm -rf symfony-template-test/
 git clone symfony-template/ symfony-template-test/
-cd symfony-template-test/
+cd symfony-template-test/ || exit
 exec ./start.sh
