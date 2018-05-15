@@ -72,6 +72,7 @@ set -x
 # hugo will create the directory if it doesn't exist but I like to be thorough.
 mkdir -p $DOCUMENATION_DIRECTORY
 hugo new site $DOCUMENATION_DIRECTORY
+gi hugo > $DOCUMENATION_DIRECTORY/.gitignore
 
 # composer will create the directory if it doesn't exist but I like to be thorough.
 mkdir -p $APPLICATION_DIRECTORY
