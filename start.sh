@@ -395,3 +395,4 @@ PHPCS_XML
 rm LICENSE.txt
 rm README.md
 rm start.sh
+rm test.sh
