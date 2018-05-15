@@ -121,7 +121,7 @@ composer init --no-interaction \
     --require-dev "squizlabs/php_codesniffer:3.*"
 composer install
 
-cat > deployer.php <<DEPLOYER_PHP
+cat > deploy.php <<DEPLOY_PHP
 <?php
 namespace Deployer;
 
@@ -213,7 +213,7 @@ after('deploy:failed', 'deploy:unlock');
 
 // Migrate database before symlink new release.
 before('deploy:symlink', 'database:migrate');
-DEPLOYER_PHP
+DEPLOY_PHP
 
 cat > Makefile <<MAKEFILE
 # when you run 'make' alone, run the 'css' rule (at the
